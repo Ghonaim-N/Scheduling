@@ -1,15 +1,4 @@
 <!DOCTYPE html>
-<script>
-  // Function to dynamically set the width of the iframe
-  function resizeIframe() {
-    var notebookWidth = document.getElementById('notebook-container').offsetWidth;
-    document.getElementById('iframe').style.width = notebookWidth + 'px';
-  }
-
-  // Call the function when the page loads and whenever it's resized
-  window.onload = resizeIframe;
-  window.onresize = resizeIframe;
-</script>
 
 <style type="text/css">
   #ipython_notebook img {
@@ -56,7 +45,6 @@
     }
   }
 </style>
-
 <body>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -87,7 +75,7 @@
 
               <div class="output_html rendered_html output_subarea output_execute_result">
 
-                <iframe src="https://www.when2meet.com/?24052182-w2j3O" style="width: 100%; max-width: 1500px; height: 650px;"
+                <iframe src="https://www.when2meet.com/?24052182-w2j3O" style="width: 100vw; height: 650px;"
                   frameborder="0" marginheight="0" marginwidth="0">
                   Loading...
                 </iframe>
