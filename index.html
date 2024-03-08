@@ -1,120 +1,76 @@
 <!DOCTYPE html>
+<html>
 
-<style type="text/css">
-  #ipython_notebook img {
-    display: block;
-    background: url(logo.png) no-repeat;
-    background-size: contain;
-    height: 28px;
-    padding-left: 258px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-</style>
-
-<style type="text/css">
-  /* Overrides of notebook CSS for static HTML export */
-  body {
-    overflow: visible;
-    padding: 8px;
-  }
-
-  div#notebook {
-    overflow: visible;
-    border-top: none;
-  }
-
-  div#notebook-container {
-    padding: 6ex 12ex 8ex 12ex;
-  }
-
-  @media print {
-    div.cell {
-      display: block;
-      page-break-inside: avoid;
+<head>
+  <style type="text/css">
+    /* CSS for notebook layout */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
     }
 
-    div.output_wrapper {
-      display: block;
-      page-break-inside: avoid;
+    #notebook {
+      display: flex;
+      justify-content: flex-start;
+      padding: 20px 10px;
+      /* Adjust padding as needed */
+      box-sizing: border-box;
+      overflow-x: auto;
+      background-color: #f8f8f8;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      -webkit-box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
+      box-shadow: 0px 0px 12px 1px rgba(87, 87, 87, 0.2);
     }
 
-    div.output {
-      display: block;
-      page-break-inside: avoid;
+    #content {
+      flex: 1;
+      max-width: 400px;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #fff;
+      border-radius: 5px;
+      margin-right: 20px;
     }
-  }
-</style>
+
+    #notebook iframe {
+      width: 82%;
+      height: 650px;
+      border: none;
+    }
+  </style>
+</head>
+
 <body>
-  <div tabindex="-1" id="notebook" class="border-box-sizing">
-    <div class="container" id="notebook-container">
+  <div id="notebook">
+    <div id="content">
+      <h1>Availability Poll</h1>
+      <p>This When2meet poll was created to coordinate our availability.</p>
+      <p>Please enter your full name. Enter a password if you would like the ability to return and modify your
+        availability in the future. Clicking "Sign In" will bring you to an editable calendar. Time slots
+        highlighted in green are available. Click and drag to select the times you're available for the event. You
+        can select multiple time slots by dragging over them.</p>
+      <p><a href="https://www.when2meet.com/?24052182-w2j3O">When2Meet Direct Link</a></p>
 
-      <div class="cell border-box-sizing text_cell rendered">
-        <div class="inner_cell">
-          <div class="text_cell_render border-box-sizing rendered_html">
-            <h1 id="Availability-Poll">Availability Poll<a class="anchor-link" href="#Availability-Poll">&#182;</a></h1>
-            <p>Please fill out the When2meet poll using your <strong><em>full name</em></strong>.</p>
-            <p>Please enter your full name. Enter a password if you would like the ability to return and modify your
-              availability in the future. Clicking "Sign In" will bring you to an editable calendar. Time slots
-              highlighted in green are available. Click and drag to select the times you're available for the event. You
-              can select multiple time slots by dragging over them.</p>
-            <ul>
-              <li><a href="https://www.when2meet.com/?24052182-w2j3O">When2Meet Direct Link</a></li>
-            </ul>
+      <p>The results for this poll will be used to find times to schedule an interview. Times will be chosen that
+        best fit into all participants' schedules.</p>
 
-          </div>
-        </div>
-      </div>
-      <div class="cell border-box-sizing code_cell rendered">
-
-        <div class="output_wrapper">
-          <div class="output">
-
-            <div class="output_area">
-
-
-              <div class="output_html rendered_html output_subarea output_execute_result">
-
-                <iframe src="https://www.when2meet.com/?24052182-w2j3O" style="width: 100vw; height: 650px;"
-                  frameborder="0" marginheight="0" marginwidth="0">
-                  Loading...
-                </iframe>
-
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-      <div class="cell border-box-sizing text_cell rendered">
-        <div class="inner_cell">
-          <div class="text_cell_render border-box-sizing rendered_html">
-            <p>The results for this poll will be used to find times to schedule an interview. Times will be chosen that
-              best fits into all participants' schedules.</p>
-
-          </div>
-        </div>
-      </div>
-      <div class="cell border-box-sizing text_cell rendered">
-        <div class="inner_cell">
-          <div class="text_cell_render border-box-sizing rendered_html">
-            <p>Writen by Nouran Ghonaim, Michigan State University
-              <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License"
-                  style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work
-              is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative
-                Commons Attribution-NonCommercial 4.0 International License</a>.
-            </p>
-
-          </div>
-        </div>
-      </div>
+      <p>Written by Nouran Ghonaim, Michigan State University
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License"
+            style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work
+        is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative
+          Commons Attribution-NonCommercial 4.0 International License</a>.
+      </p>
     </div>
+
+    <iframe src="https://www.when2meet.com/?24052182-w2j3O"></iframe>
   </div>
 </body>
-
-
-
 
 </html>
